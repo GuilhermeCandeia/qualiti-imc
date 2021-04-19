@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HELLO CLASS</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+  </head>
+  <body>
+    <div class="area_superior">
+      <h1>&lt;HELLO CLASS&gt;</h1>
+      <h2>&lt;Introdução a programação WEB&gt;</h2>
+    </div>
+   <div class="exemplo_class_div"></div>
+    <main class="bloco_IMC">
+      <section class="secao">
+        <article class="bloco_inputs">
+          <div class="bloco_formulario">
+            <fieldset>
+              <legend>Qual seu peso?</legend>
+              <div class="agrupando_bloco_formulario">
+                <label for="peso">Quilos</label>
+                <input id="peso" type="number" value="50.0" step="0.5" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Qual sua altura?</legend>
+              <div class="agrupando_bloco_formulario">
+                <label for="altura">Metros</label>
+                <input id="altura" type="number" value="1.0" step="0.1"  />
+              </div>
+            </fieldset>
+            <button onclick="calcularIMC()">Calcular</button>
+          </div>
+        </article>
+        <footer class="bloco_resultado_IMC">
+          <h3 class="bloco_resultado_IMC_valor">
+            <small> IMC = </small> <span id="resposta">0.0</span>
+          </h3>
+          <small id="classificacao" style="  font-size: 2rem; color: #0c9fee;"></small>
+        </footer>
+      </section>
+
+    </main>
+    <footer class="bloco_rodape">
+      <a href="http://www.qualiti.com.br/" target="_blank">
+        <img alt="qualiti" src="./img/logo-qualiti.png">
+      </a>    
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

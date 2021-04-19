@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Titillium Web&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Titillium Web", "Lato", sans-serif;
+  font-size: 16px;
+}
+body {
+  margin: 0;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 24px;
+}
+p {
+  margin: 0;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 50%;
+  height: 40px;
+  border-radius: 5px;
+  margin: 1.5rem 0 0 0;
+}
+
+.area_superior {
+  z-index: 1;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #021020;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.area_superior h1{
+  color: yellow;
+  text-align: center;
+}
+.area_superior h2{
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: 320px) {
+  .bloco_IMC {
+    margin: 0 0 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .bloco_IMC {
+    margin: 6rem auto 6rem auto;
+  }
+}
+@media (min-width: 992px) {
+  .bloco_IMC {
+    max-width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .bloco_IMC {
+    max-width: 60%;
+  }
+}
+
+.exemplo_class_div {
+  position: relative;
+  height: auto;
+  padding: 2rem 1rem;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .exemplo_class_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.bloco_inputs {
+  padding: 3rem 1rem;
+  background-color: #0c9fee;
+  margin-bottom: 10px;
+}
+
+.bloco_formulario {
+  text-align: right;
+}
+
+.bloco_formulario fieldset {
+  padding: 0;
+  border: none;
+}
+
+.bloco_formulario fieldset:not(:first-child) {
+  margin: 1.5rem 0 0 0;
+}
+.bloco_formulario legend {
+  font-weight: bold;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+}
+.agrupando_bloco_formulario {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+.agrupando_bloco_formulario label {
+  text-align: right;
+  width: 60%;
+  padding: 0.7rem 0.5rem;
+  margin: 0;
+  background-color: #ecddf3;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.agrupando_bloco_formulario input {
+  width: 40%;
+  padding: 0.7rem 0.5rem;
+  margin: 0;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.agrupando_bloco_formulario p {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.bloco_resultado_IMC {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #f6f6f6;
+  margin-bottom: 10px;
+}
+.bloco_resultado_IMC_valor span {
+  font-size: 3.5rem;
+  color: #021020;
+  margin: 0 0 0.5rem 0;
+}
+.bloco_resultado_IMC_valor small {
+  font-size: 2rem;
+  color: #ecddf3;
+}
+.bloco_resultado_IMC_valor p {
+  font-size: 2rem;
+  color: #ac26eb;
+}
+.bloco_resultado_IMC_legenda {
+  font-size: 1.2rem;
+  color: #3f3d56;
+}
+@media (min-width: 768px) {
+  .secao {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .secao__cabecalho {
+    width: 100%;
+  }
+  .bloco_resultado_IMC {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .bloco_inputs,
+  .bloco_resultado_IMC {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .bloco_inputs {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .bloco_resultado_IMC {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+.bloco_rodape {
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  color: #7f479b;
+  background-color: #021020;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
